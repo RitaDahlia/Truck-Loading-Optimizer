@@ -1,0 +1,411 @@
+/* Modern Responsive Style for Truck Loading Optimizer */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: -0.02em;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 2rem;
+}
+
+    /* Input Container Styling */
+    form > div {
+        margin-bottom: 1.5rem;
+        position: relative;
+    }
+
+label {
+    display: block;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.01em;
+}
+
+small {
+    display: block;
+    color: #718096;
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #ffffff;
+    color: #2d3748;
+}
+
+    input[type="text"]:focus,
+    input[type="number"]:focus {
+        outline: none;
+        border-color: #667eea;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        transform: translateY(-1px);
+    }
+
+    input[type="text"]:hover,
+    input[type="number"]:hover {
+        border-color: #cbd5e0;
+    }
+
+/* Fieldset Styling */
+fieldset {
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+}
+
+legend {
+    font-weight: 700;
+    color: #2d3748;
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 2px solid #e2e8f0;
+}
+
+/* Radio Button Styling */
+input[type="radio"] {
+    width: auto;
+    margin-right: 0.5rem;
+    accent-color: #667eea;
+    transform: scale(1.1);
+}
+
+fieldset label {
+    display: flex;
+    align-items: center;
+    margin: 0.75rem 0;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+    fieldset label:hover {
+        color: #667eea;
+    }
+
+/* Submit Button */
+button[type="submit"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    margin-top: 1rem;
+    width: 100%;
+}
+
+    button[type="submit"]:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    }
+
+    button[type="submit"]:active {
+        transform: translateY(0);
+    }
+
+/* Error Messages */
+.error {
+    color: #e53e3e;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+    background: rgba(229, 62, 62, 0.1);
+    border-radius: 8px;
+    border-left: 4px solid #e53e3e;
+}
+
+/* Message Box */
+#messageBox {
+    margin: 2rem 0;
+}
+
+    #messageBox > div {
+        padding: 1.5rem;
+        border-radius: 16px;
+        margin-bottom: 1rem;
+        font-weight: 500;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #messageBox button {
+        background: #ffffff;
+        color: #2d3748;
+        border: 2px solid #e2e8f0;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        margin-top: 1rem;
+    }
+
+        #messageBox button:hover {
+            background: #f7fafc;
+            transform: translateY(-1px);
+        }
+
+/* Results Section */
+#results {
+    margin-top: 2rem;
+}
+
+    #results h2 {
+        color: #ffffff;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Results Info Boxes */
+    #results > div {
+        margin-bottom: 1.5rem;
+        border-radius: 16px;
+        padding: 1.5rem;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+    }
+
+    #results h4 {
+        margin-bottom: 0.75rem;
+        font-weight: 700;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+/* Result Tables */
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+    .result-table th {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 1rem;
+        font-weight: 700;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    .result-table td {
+        padding: 0.875rem 1rem;
+        border-bottom: 1px solid #e2e8f0;
+        color: #2d3748;
+        font-weight: 500;
+    }
+
+    .result-table tr:nth-child(even) {
+        background: rgba(247, 250, 252, 0.5);
+    }
+
+    .result-table tr:hover {
+        background: rgba(102, 126, 234, 0.05);
+        transform: scale(1.001);
+        transition: all 0.2s ease;
+    }
+
+    .result-table td:first-child {
+        font-weight: 600;
+        color: #4a5568;
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    form {
+        padding: 1.5rem;
+        border-radius: 16px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+
+    fieldset {
+        padding: 1rem;
+    }
+
+    button[type="submit"] {
+        font-size: 1rem;
+    }
+
+    .result-table {
+        font-size: 0.9rem;
+    }
+
+        .result-table th,
+        .result-table td {
+            padding: 0.75rem 0.5rem;
+        }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    .result-table {
+        font-size: 0.85rem;
+    }
+
+        .result-table th,
+        .result-table td {
+            padding: 0.5rem 0.25rem;
+        }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    }
+
+    form {
+        background: rgba(26, 32, 44, 0.95);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    label {
+        color: #e2e8f0;
+    }
+
+    small {
+        color: #a0aec0;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        background: #2d3748;
+        color: #e2e8f0;
+        border-color: #4a5568;
+    }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus {
+            border-color: #667eea;
+            background: #2d3748;
+        }
+
+    fieldset {
+        background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+        border-color: #4a5568;
+    }
+
+    legend {
+        background: #2d3748;
+        color: #e2e8f0;
+        border-color: #4a5568;
+    }
+
+    .result-table {
+        background: rgba(26, 32, 44, 0.95);
+    }
+
+        .result-table td {
+            color: #e2e8f0;
+            border-color: #4a5568;
+        }
+
+        .result-table tr:nth-child(even) {
+            background: rgba(45, 55, 72, 0.5);
+        }
+
+        .result-table tr:hover {
+            background: rgba(102, 126, 234, 0.1);
+        }
+}
+
+/* Animation for form appearance */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
